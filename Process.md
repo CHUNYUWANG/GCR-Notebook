@@ -23,6 +23,8 @@ domain=$(whoami|awk -F. '{ print $1 }')
 
 
 sudo docker build -t gcr-repos.redmond.corp.microsoft.com:5000/chnuwa/tensorflow:1.7-cu90-cudnn70-py27 --build-arg uid=$uid --build-arg did=$did --build-arg alias=$alias --build-arg domain=$domain -f myconfig .
+
+docker push gcr-repos.redmond.corp.microsoft.com:5000/chnuwa/tensorflow:1.7-cu90-cudnn70-py27
 ```
 
 Sample myconfig file
