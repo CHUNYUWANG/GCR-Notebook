@@ -64,3 +64,15 @@ RUN echo "${domain}.domain users:x:${did}:${domain}.${alias}" >> /etc/group \
 COPY myconfig /root/myconfig
 
 ```
+
+## Run demo code on GPU DEV machine first
+```
+docker run --rm --ipc=host --volume-driver=nfs -e CUDA_VISIBLE_DEVICES=0 -v gcrnfsw2-msraim.redmond.corp.microsoft.com/msraimscratch:/msraimscratch --user FAREAST.chnuwa gcr-repos.redmond.corp.microsoft.com:5000/chnuwa/tensorflow:1.7-cu90-cudnn70-py27 sh -c "cd /msraimscratch/wenxie/GCR && python -u cnn_mnist.py 1> out.txt 2>err.txt"
+```
+
+## Run code on HPC
+```
+Install the client at \\gcrgpu03\REMINST
+
+```
+
