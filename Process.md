@@ -6,6 +6,8 @@
 
 ## 4. Mount directory for share folder (performed on GCR DEV machine)
 ```
+sudo mkdir -p /msraimscratch/chnuwa
+
 sudo mount.cifs //gcrnfsw2-msraim/msraimscratch/$(whoami|cut -d. -f2) /msraimscratch/$(whoami|cut -d. -f2) --verbose -o cruid=$(id -u),uid=$(id -u),gid=$(id -g),nounix,serverino,mapposix,file_mode=0777,dir_mode=0777,noforceuid,noforcegid,vers=2.1,domain=FAREAST,username=chnuwa
 ```
 
