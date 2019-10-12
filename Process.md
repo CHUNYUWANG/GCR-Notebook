@@ -5,6 +5,8 @@
 ## 3. Setup SSH Key for local windows computer at https://dev.azure.com/msresearch/GCR/_wiki/wikis/GCR.wiki/531/Linux-Sandbox-Getting-Started?anchor=generate-ssh-key-and-upload-to-gcr
 
 ## 4. Mount directory for share folder (performed on GCR DEV machine)
+make sure you can access \\gcrnfsw2-msraim\msraimscratch\chnuwa
+
 ```
 sudo mkdir -p /msraimscratch/chnuwa
 
