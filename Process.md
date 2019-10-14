@@ -80,3 +80,11 @@ Install the client at \\gcrgpu03\REMINST
 
 ```
 
+If you rebuilt docker using the same name, remember to run the following commands
+
+```
+sudo docker rm $(sudo docker ps -a -q)
+sudo docker rmi $(sudo docker images -q)
+
+```
+
